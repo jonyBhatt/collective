@@ -41,6 +41,9 @@
   --radius-md: calc(var(--radius) - 4px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  --font-Dm-Sans: var(--font-DM-sans);
+  --font-Dm-Mono: var(--font-DM-mono)
 }
 
 :root {
@@ -119,5 +122,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  h1,h2,h3,h4,h5{
+    @apply text-primary;
   }
 }
