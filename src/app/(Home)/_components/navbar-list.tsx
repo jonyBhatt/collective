@@ -23,7 +23,7 @@ const NavbarItemContainer = ({
   return (
     <Button
       className={`bg-transparent hover:bg-transparent rounded-full hover:border-primary border-transparent px-3.5 text-lg font-Dm-Sans font-medium ${
-        isActive && "bg-primary text-white hover:bg-black hover:text-white"
+        isActive && "bg-primary/70 text-white hover:bg-black hover:text-white"
       }`}
       variant="outline"
     >
