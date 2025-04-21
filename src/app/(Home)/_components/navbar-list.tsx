@@ -22,7 +22,7 @@ const NavbarItemContainer = ({
 }: NavbarItemContainerProps) => {
   return (
     <Button
-      className={`bg-transparent hover:bg-transparent rounded-full hover:border-primary border-transparent px-3.5 text-lg font-Dm-Sans font-medium ${
+      className={`bg-transparent hover:bg-transparent rounded-full hover:border-primary border-transparent px-3.5 text-lg font-Dm-Sans font-medium  tablet-screen-nav-list-button ${
         isActive && "bg-primary/70 text-white hover:bg-black hover:text-white"
       }`}
       variant="outline"
@@ -36,7 +36,7 @@ export const NavbarItem = ({ items }: Props) => {
   const pathname = usePathname();
   const isActive = (item: NavbarItemContainerProps) => pathname === item.href;
   return (
-    <div className="items-center gap-4 hidden lg:flex">
+    <div className="items-center hidden lg:flex lg:gap-4">
       {items.map((items, i) => (
         <NavbarItemContainer
           key={i}

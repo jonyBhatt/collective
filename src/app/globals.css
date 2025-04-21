@@ -43,7 +43,10 @@
   --radius-xl: calc(var(--radius) + 4px);
 
   --font-Dm-Sans: var(--font-DM-sans);
-  --font-Dm-Mono: var(--font-DM-mono)
+  --font-Dm-Mono: var(--font-DM-mono);
+
+  --breakpoint-tablet: 1180px
+
 }
 
 :root {
@@ -125,5 +128,22 @@
   }
   h1,h2,h3,h4,h5{
     @apply text-primary;
+  }
+}
+
+@media (width <= 1180px){
+  .tablet-screen-font-size{
+    font-size: 30px;
+  }
+  .tablet-screen-nav-list-button{
+    font-size: 16px;
+    padding-inline: 10px;
+  }
+   .tablet-screen-nav-button{
+    padding-inline: 12px;
+    font-size: 16px;
+  }
+  .mobile-bar{
+    display: flex;  
   }
 }
